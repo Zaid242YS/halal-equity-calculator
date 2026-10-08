@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Creed-to-Commerce™ · Aquaponics Tilapia Farm Equity Outcome Ranker (KSA)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --font:'Amiri','Scheherazade New','Traditional Arabic',Georgia,'Times New Roman',serif;
+  --num:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  /* Creed-to-Commerce green & gold */
+  --bg:#f7f5ee;--card:#fffdf8;--ink:#16241c;--muted:#5f6b60;--line:#e3dcc5;
+  --accent:#0b5d3b;--accent-soft:#e6f0e3;--gold:#b8902f;--gold-soft:#f6edd2;
+  --pos:#1b7f4c;--neg:#b8392f;--warn:#9a6a00;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1a14;--card:#16251c;--ink:#eef3ea;--muted:#a9b8a8;--line:#2d4034;
+    --accent:#4fc08a;--accent-soft:#1a3326;--gold:#d8b45a;--gold-soft:#2b2814;
+    --pos:#58cf97;--neg:#f0786d;--warn:#e0b050;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1a14;--card:#16251c;--ink:#eef3ea;--muted:#a9b8a8;--line:#2d4034;
+  --accent:#4fc08a;--accent-soft:#1a3326;--gold:#d8b45a;--gold-soft:#2b2814;
+  --pos:#58cf97;--neg:#f0786d;--warn:#e0b050;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.45}
+.wrap{max-width:940px;margin:0 auto;padding:16px}
+h1,h2{font-family:var(--font)}
+h1{font-size:1.5rem;margin:8px 0 2px;color:var(--accent)}
+h2{font-size:1.2rem;margin:0 0 10px;color:var(--accent)}
+.sub{color:var(--muted);font-size:.95rem;margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:14px}
+
+/* brand header */
+.brand{text-align:center;padding:18px 12px 14px;margin-bottom:14px;border-radius:14px;
+  background:linear-gradient(180deg,var(--accent-soft),var(--card));border:1px solid var(--line);border-top:4px solid var(--gold)}
+.basmala{font-size:2rem;line-height:1.9;color:var(--gold);font-weight:700}
+.mark{font-size:1.7rem;font-weight:700;color:var(--accent);letter-spacing:.3px}
+.mark sup{font-size:.5em;color:var(--gold)}
+.org{font-size:.95rem;color:var(--muted);margin-top:2px}
+.rule{height:2px;width:90px;background:var(--gold);margin:10px auto 0;border-radius:2px}
+.foot{text-align:center;color:var(--muted);font-size:.9rem;padding:14px 8px 24px;border-top:2px solid var(--gold);margin-top:6px}
+.foot b{color:var(--accent)}
+
+button{font-family:var(--font)}
+.pill{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 12px;border-radius:999px;font-size:.9rem;cursor:pointer}
+.pill.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pill.soft.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:700}
+.primary{background:var(--accent);color:#fff;border:2px solid var(--gold);padding:9px 16px;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer}
+.ghost{background:var(--card);color:var(--accent);border:1px solid var(--accent);padding:8px 13px;border-radius:10px;font-size:.95rem;cursor:pointer}
+.danger{color:var(--neg);border-color:var(--neg)}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.toolbar .grp,.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+label{display:block;font-size:.85rem;color:var(--muted)}
+input[type=number],input[type=text]{width:100%;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font-size:.95rem;margin-top:3px;font-family:var(--num)}
+.fld{position:relative}
+.fld input{padding-right:28px}
+.x{position:absolute;right:5px;bottom:6px;width:22px;height:22px;border:0;border-radius:50%;background:transparent;color:var(--muted);font-size:.8rem;cursor:pointer;line-height:1}
+.x:hover{background:var(--gold-soft);color:var(--neg)}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.82rem;min-width:520px;font-family:var(--num)}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--muted);font-weight:600}
+td input[type=number]{width:72px;padding:5px;margin:0;text-align:right}
+td input[type=text]{width:150px;padding:5px;margin:0}
+.rank{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid var(--line);border-radius:12px;margin-bottom:8px;cursor:pointer;background:var(--card)}
+.rank.static{cursor:default}
+.rank.sel{outline:2px solid var(--gold)}
+.badge{min-width:32px;height:32px;border-radius:50%;background:var(--gold-soft);color:var(--accent);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.8rem;padding:0 4px;font-family:var(--num)}
+.rbody{flex:1;min-width:0}
+.rtop{display:flex;justify-content:space-between;gap:8px;font-size:1rem;font-weight:700}
+.bar{height:10px;background:var(--bg);border-radius:6px;margin-top:6px;position:relative;overflow:hidden}
+.bar i{position:absolute;top:0;bottom:0;border-radius:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;font-size:.72rem;color:var(--muted);font-family:var(--num)}
+.chips span{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+.pos{color:var(--pos)}.neg{color:var(--neg)}
+.metric{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 12px}
+.coach{background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:10px;padding:12px;font-size:1rem;margin-top:10px}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:8px;margin:12px 0}
+.stat{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--bg)}
+.stat b{display:block;font-size:1.1rem;font-family:var(--num)}
+.stat small{color:var(--muted);font-size:.8rem}
+details summary{cursor:pointer;font-weight:700;color:var(--accent)}
+details p,details li{font-size:.95rem;color:var(--muted)}
+.note{font-size:.82rem;color:var(--muted);margin-top:8px}
+.warn{color:var(--warn);font-size:.9rem;margin:6px 0}
+.banner{padding:10px 12px;border-radius:10px;font-size:.95rem;margin-bottom:12px;border:1px solid var(--gold);background:var(--gold-soft)}
+.banner.custom{background:var(--accent-soft);border-color:var(--accent)}
+svg text{fill:var(--muted);font-size:11px;font-family:var(--num)}
+#report{display:none}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  :root,:root[data-theme]{--bg:#fff;--card:#fff;--ink:#111;--muted:#444;--line:#cfd6d3;--accent:#0b5d3b;--accent-soft:#e8f1e4;--gold:#9a7416;--gold-soft:#f8f0d6;--pos:#0d6b4a;--neg:#a52f26;--warn:#8a5a00;padding:0}
+  body{background:#fff;color:#111;font-size:12px}
+  .wrap{display:none!important}
+  #report{display:block;padding:0 0 22px}
+  #report .cover{text-align:center;border-top:5px solid var(--gold);border-bottom:2px solid var(--gold);padding:14px 0 12px;margin-bottom:12px}
+  #report .basmala{font-size:26px;line-height:1.8}
+  #report .mark{font-size:24px}
+  #report h1{font-size:19px;margin:6px 0 2px;color:var(--accent)}
+  #report h2{font-size:15px;margin:16px 0 6px;border-bottom:2px solid var(--gold);padding-bottom:3px;color:var(--accent)}
+  #report table{min-width:0;font-size:10px;page-break-inside:avoid}
+  #report .block{page-break-inside:avoid}
+  #report .pb{page-break-before:always}
+  th,td{white-space:normal}
+  .pfooter{position:fixed;bottom:0;left:0;right:0;text-align:center;font-size:9.5px;color:var(--accent);border-top:1.5px solid var(--gold);padding-top:3px;background:#fff}
+  @page{margin:14mm 14mm 18mm}
+}
+#report .kv{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:8px 0}
+#report .kv div{border:1px solid var(--line);border-radius:6px;padding:6px 8px}
+#report .kv b{display:block;font-size:13px;font-family:var(--num)}
+#report .kv small{color:var(--muted)}
+#report .meta{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0;font-size:11px}
+#report .sample{border:1px solid var(--gold);background:var(--gold-soft);padding:6px 8px;border-radius:6px;font-size:10.5px;margin:8px 0}
+#report .disc{font-size:10px;color:var(--muted);margin-top:14px;border-top:1px solid var(--line);padding-top:6px}
+.pfooter{display:none}
+@media print{.pfooter{display:block}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <div class="basmala" lang="ar" dir="rtl">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+    <div class="mark">Creed-to-Commerce<sup>™</sup></div>
+    <div class="org">The Balanced Middle Path Academy, LLC</div>
+    <div class="rule"></div>
+  </div>
+
+  <h1>Equity Outcome Ranker</h1>
+  <p class="sub">Aquaponics tilapia farm, Saudi Arabia · scenarios + Monte Carlo · outcomes ranked low → high</p>
+
+  <div class="card toolbar">
+    <div class="grp">
+      <span style="font-size:.9rem;color:var(--muted)">Currency</span>
+      <button class="pill on" id="curSAR">SAR</button>
+      <button class="pill" id="curUSD">USD</button>
+    </div>
+    <div class="grp">
+      <label style="width:130px">SAR per USD<input type="number" step="0.01" id="fx" value="3.75"></label>
+    </div>
+    <div class="grp" style="margin-left:auto">
+      <button class="primary" id="pdfBtn">⬇ Investor PDF</button>
+    </div>
+  </div>
+  <p class="note" style="margin:-6px 4px 12px">PDF export opens your print dialog: choose "Save as PDF". Inputs are stored in SAR and shown in your chosen currency.</p>
+
+  <div class="card">
+    <h2>Data manager</h2>
+    <div class="banner" id="banner"></div>
+    <div class="row">
+      <button class="ghost danger" id="btnClear">Clear all sample data</button>
+      <button class="ghost" id="btnRestore">Restore sample data</button>
+      <button class="ghost" id="btnExport">Export data (JSON)</button>
+      <button class="ghost" id="btnImport">Import data</button>
+      <input type="file" id="fileIn" accept="application/json,.json" style="display:none">
+    </div>
+    <span class="note" id="dmStatus"></span>
+    <h2 style="margin-top:14px">Report details (appear on the investor PDF)</h2>
+    <div class="grid" id="repFields"></div>
+    <p class="note">Edit any value directly. Use the ✕ inside a field to clear just that value. Clearing everything resets the model to blank so you can enter your own farm's figures.</p>
+  </div>
+
+  <div class="card">
+    <details>
+      <summary>Coach's rationale: why equity is measured this way</summary>
+      <ul>
+        <li><b>Equity = cash you put at risk.</b> Total funding (capex + working capital) minus debt. Lenders are paid first, so owners absorb every shock.</li>
+        <li><b>NPV of equity cash flows</b> at your cost of equity shows whether the farm beats your next-best investment.</li>
+        <li><b>IRR and equity multiple</b> show speed and size of return on invested cash.</li>
+        <li><b>Exit equity value</b> = final-year EBITDA × multiple − remaining debt + working capital recovered.</li>
+        <li><b>DSCR</b> (cash earnings ÷ debt service) tests whether the farm survives a bad year. Below 1.2x is a warning.</li>
+        <li><b>Monte Carlo</b> replaces a handful of hand-picked cases with thousands of random price, yield, feed and capex draws. It turns "what if" into "how likely".</li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="card">
+    <h2>1. Farm assumptions</h2>
+    <div class="grid" id="fields"></div>
+    <p class="note">Starter values are illustrative planning numbers, not quotes. Replace them with supplier bids, feed prices, and lender terms. Tax/zakat treatment depends on ownership structure; confirm with a Saudi tax advisor. Horizon is treated as at least 1 year.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. Scenarios</h2>
+    <div class="scroll"><table id="scenTable"></table></div>
+    <div class="row" style="margin-top:10px">
+      <button class="ghost" id="addScen">+ Add scenario</button>
+    </div>
+    <p class="note">Rename, edit or remove any scenario (1 to 8). 1.00 = base assumptions. The scenario marked "Base" is the centre of the Monte Carlo draws and the investor report's headline case.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Equity outcomes (lowest → highest)</h2>
+    <div class="metric" id="metrics"></div>
+    <div id="ranking"></div>
+    <div class="coach" id="coach"></div>
+  </div>
+
+  <div class="card">
+    <h2>4. Monte Carlo simulation</h2>
+    <div class="grid" id="mcFields"></div>
+    <div style="margin-top:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+      <button class="primary" id="mcRun">Run simulation</button>
+      <span class="note" id="mcStatus" style="margin:0"></span>
+    </div>
+    <div id="mcOut"></div>
+  </div>
+
+  <div class="card">
+    <h2>5. Year-by-year equity cash flow: <span id="selName"></span></h2>
+    <div class="scroll"><table id="cfTable"></table></div>
+  </div>
+
+  <div class="foot">
+    <div class="basmala" lang="ar" dir="rtl" style="font-size:1.3rem;line-height:1.6">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+    <b>Creed-to-Commerce™</b> · The Balanced Middle Path Academy, LLC · © <span id="yr"></span>
+  </div>
+</div>
+
+<div id="report"></div>
+<div class="pfooter"><b>Creed-to-Commerce™</b> · The Balanced Middle Path Academy, LLC · Planning model, not financial advice</div>
+
+<script>
+/* ===================== DATA ===================== */
+// [key, label, sample default (SAR if currency), isCurrency]
+const FIELDS=[
+['capex','Total capex',6000000,1],
+['wc','Working capital',400000,1],
+['debtPct','Debt share of funding (%)',40],
+['rate','Loan interest (%)',4.5],
+['term','Loan term (years)',8],
+['kg','Mature output, gross kg/yr',200000],
+['mort','Mortality/grading loss (%)',8],
+['r1','Year 1 ramp-up (%)',50],
+['r2','Year 2 ramp-up (%)',85],
+['price','Tilapia price (per kg)',18,1],
+['produce','Produce sales at maturity (per yr)',200000,1],
+['feed','Feed cost (per kg produced)',6,1],
+['fing','Fingerlings (per kg)',0.9,1],
+['energy','Energy & cooling (per kg)',1.8,1],
+['labor','Labor (per yr)',450000,1],
+['other','Other fixed costs (per yr)',250000,1],
+['infl','Cost inflation (%/yr)',2],
+['pg','Price growth (%/yr)',2],
+['life','Asset life (years)',12],
+['maint','Maintenance capex (% of capex)',2],
+['tax','Effective tax/zakat (%)',10],
+['ke','Cost of equity (%)',14],
+['N','Horizon (years)',10],
+['mult','Exit EBITDA multiple (x)',4]
+];
+const SAMPLE_SCEN=[
+{name:'Severe downside',price:0.80,yield:0.80,feed:1.20,capex:1.10},
+{name:'Downside',price:0.90,yield:0.90,feed:1.10,capex:1.05},
+{name:'Base case',price:1,yield:1,feed:1,capex:1},
+{name:'Upside',price:1.08,yield:1.05,feed:0.95,capex:1},
+{name:'Strong upside',price:1.15,yield:1.10,feed:0.90,capex:0.97}
+];
+const METRICS=[['npv','NPV of equity'],['irr','Equity IRR'],['moic','Equity multiple'],['roe','Avg ROE'],['exitEq','Exit equity value']];
+const MCF=[
+['trials','Trials',2000,0],['seed','Random seed',42,0],
+['sdPrice','Price volatility (σ, %)',12,1],['sdYield','Yield volatility (σ, %)',10,1],
+['sdFeed','Feed cost volatility (σ, %)',10,1],['sdCapex','Capex overrun volatility (σ, %)',8,1],
+['sdMort','Mortality volatility (σ, pts)',3,1]
+];
+const REPF=[['project','Project name'],['forWho','Prepared for (investor / lender)'],['byWho','Prepared by']];
+const SAMPLE_REP={project:'Aquaponics Tilapia Farm, Saudi Arabia',forWho:'',byWho:'Professor Zaid Ansari, Founder & Principal Consultant, The Balanced Middle Path Academy, LLC'};
+
+const P={},MCP={},REP=Object.assign({},SAMPLE_REP);
+const SCEN=[];
+const blank=new Set();
+let metric='npv',selected=2,baseIdx=2,CUR='SAR',FX=3.75,MC=null,isSample=true;
+
+function loadSample(){
+  FIELDS.forEach(f=>P[f[0]]=f[2]);
+  MCF.forEach(f=>MCP[f[0]]=f[2]);
+  SCEN.length=0;SAMPLE_SCEN.forEach(s=>SCEN.push(Object.assign({},s)));
+  baseIdx=2;selected=2;blank.clear();MC=null;isSample=true;
+}
+function clearAll(){
+  FIELDS.forEach(f=>{P[f[0]]=0;blank.add(f[0]);});
+  MCF.forEach(f=>{if(f[3])MCP[f[0]]=0;});
+  SCEN.length=0;SCEN.push({name:'Base case',price:1,yield:1,feed:1,capex:1});
+  baseIdx=0;selected=0;MC=null;isSample=false;
+}
+loadSample();
+
+/* ===================== FORMAT ===================== */
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const cv=n=>CUR==='USD'?n/FX:n;
+const fmt=n=>n==null||!isFinite(n)?'n/a':Math.round(cv(n)).toLocaleString('en-US');
+const money=n=>CUR+' '+fmt(n);
+const pct=n=>n==null||!isFinite(n)?'n/a':(n*100).toFixed(1)+'%';
+const x2=n=>n==null||!isFinite(n)?'n/a':n.toFixed(2)+'x';
+const yrs=n=>n==null?'beyond horizon':n.toFixed(1)+' yrs';
+const dscrF=n=>n==null?'n/a':n.toFixed(2)+'x';
+
+/* ===================== MODEL ===================== */
+function run(p,s){
+  const N=Math.max(1,Math.round(p.N));
+  const capex=p.capex*s.capex,total=capex+p.wc;
+  const debt=total*p.debtPct/100,equity=total-debt;
+  const term=Math.max(1,Math.round(p.term)),prin=debt/term;
+  let bal=debt;
+  const rows=[],cf=[-equity];
+  let sumNI=0,minDscr=Infinity,cum=-equity,payback=null,inflow=0;
+  for(let y=1;y<=N;y++){
+    const ramp=y===1?p.r1/100:y===2?p.r2/100:1;
+    const ci=Math.pow(1+p.infl/100,y-1),pi=Math.pow(1+p.pg/100,y-1);
+    const gross=p.kg*s.yield*ramp,sold=gross*(1-p.mort/100);
+    const rev=sold*p.price*s.price*pi+p.produce*ramp*pi;
+    const varC=gross*(p.feed*s.feed+p.fing+p.energy)*ci;
+    const fixC=(p.labor+p.other)*ci;
+    const ebitda=rev-varC-fixC;
+    const dep=y<=p.life?capex/p.life:0;
+    const interest=bal*p.rate/100;
+    const principal=y<=term?Math.min(prin,bal):0;
+    const ebt=ebitda-dep-interest;
+    const tax=Math.max(0,ebt)*p.tax/100;
+    const ni=ebt-tax;
+    const mc=capex*p.maint/100;
+    let fcfe=ni+dep-principal-mc;
+    bal-=principal;
+    const ds=interest+principal;
+    if(ds>0)minDscr=Math.min(minDscr,(ebitda-tax)/ds);
+    let exit=0;
+    if(y===N){exit=Math.max(0,ebitda)*p.mult-bal+p.wc;fcfe+=exit;}
+    const prev=cum;cum+=fcfe;
+    if(payback===null&&cum>=0&&equity>0)payback=y-1+(fcfe>0?(-prev)/fcfe:0);
+    sumNI+=ni;if(fcfe>0)inflow+=fcfe;
+    cf.push(fcfe);
+    rows.push({y,rev,ebitda,ni,principal,fcfe,exit,bal});
+  }
+  const ke=p.ke/100;
+  const npv=cf.reduce((a,c,i)=>a+c/Math.pow(1+ke,i),0);
+  return{equity,debt,total,rows,cf,npv,irr:calcIRR(cf),moic:equity>0?inflow/equity:NaN,roe:equity>0?sumNI/N/equity:NaN,
+    exitEq:rows[rows.length-1].exit,payback,minDscr:isFinite(minDscr)?minDscr:null};
+}
+function calcIRR(cf){
+  const f=r=>cf.reduce((a,c,i)=>a+c/Math.pow(1+r,i),0);
+  let lo=-0.95,hi=5;
+  if(!isFinite(f(lo))||!isFinite(f(hi))||f(lo)*f(hi)>0)return null;
+  for(let i=0;i<100;i++){const m=(lo+hi)/2;if(f(lo)*f(m)<=0)hi=m;else lo=m;}
+  return(lo+hi)/2;
+}
+function breakevenPrice(p,s){
+  let lo=0.2,hi=4;
+  for(let i=0;i<50;i++){
+    const m=(lo+hi)/2;
+    if(run(p,Object.assign({},s,{price:m})).npv>0)hi=m;else lo=m;
+  }
+  return p.price*hi;
+}
+
+/* ===================== MONTE CARLO ===================== */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function makeNormal(rnd){return function(){let u=0,v=0;while(u===0)u=rnd();v=rnd();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}}
+const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+function pctile(sorted,q){
+  if(!sorted.length)return 0;
+  const pos=(sorted.length-1)*q,lo=Math.floor(pos),hi=Math.ceil(pos);
+  return sorted[lo]+(sorted[hi]-sorted[lo])*(pos-lo);
+}
+function runMC(){
+  const n=clamp(Math.round(MCP.trials)||2000,200,20000);
+  const rnd=mulberry32(Math.round(MCP.seed)||1),nrm=makeNormal(rnd);
+  const m=SCEN[baseIdx];
+  const npv=[],irr=[],moic=[];
+  let lossCount=0,dscrBreach=0,dscrN=0,pos=0;
+  for(let i=0;i<n;i++){
+    const s={
+      price:clamp(m.price+nrm()*MCP.sdPrice/100,0.4,1.8),
+      yield:clamp(m.yield+nrm()*MCP.sdYield/100,0.4,1.5),
+      feed:clamp(m.feed+nrm()*MCP.sdFeed/100,0.6,1.8),
+      capex:clamp(m.capex+Math.abs(nrm())*MCP.sdCapex/100,0.7,1.6)
+    };
+    const p=Object.assign({},P,{mort:clamp(P.mort+nrm()*MCP.sdMort,0,40)});
+    const r=run(p,s);
+    npv.push(r.npv);
+    irr.push(r.irr==null?-0.95:r.irr);
+    const mo=isFinite(r.moic)?r.moic:0;
+    moic.push(mo);
+    if(r.npv>0)pos++;
+    if(mo<1)lossCount++;
+    if(r.minDscr!=null){dscrN++;if(r.minDscr<1)dscrBreach++;}
+  }
+  const sNpv=npv.slice().sort((a,b)=>a-b),sIrr=irr.slice().sort((a,b)=>a-b),sMoic=moic.slice().sort((a,b)=>a-b);
+  const mean=npv.reduce((a,c)=>a+c,0)/n;
+  const sd=Math.sqrt(npv.reduce((a,c)=>a+(c-mean)*(c-mean),0)/n);
+  const qs=[0.05,0.10,0.25,0.50,0.75,0.90,0.95];
+  const tail=sNpv.slice(0,Math.max(1,Math.floor(n*0.05)));
+  MC={n,stale:false,
+    probPos:pos/n,probLoss:lossCount/n,probDscr:dscrN?dscrBreach/dscrN:null,
+    mean,sd,cvar5:tail.reduce((a,c)=>a+c,0)/tail.length,
+    npvQ:qs.map(q=>({q,v:pctile(sNpv,q)})),
+    irrQ:qs.map(q=>({q,v:pctile(sIrr,q)})),
+    moicQ:qs.map(q=>({q,v:pctile(sMoic,q)})),
+    hist:histogram(sNpv,26)};
+}
+function histogram(sorted,bins){
+  const lo=sorted[0],hi=sorted[sorted.length-1],w=(hi-lo)||1;
+  const h=new Array(bins).fill(0);
+  sorted.forEach(v=>{h[Math.min(bins-1,Math.floor((v-lo)/w*bins))]++;});
+  return{lo,hi,h};
+}
+function histSVG(){
+  const {lo,hi,h}=MC.hist,W=600,H=170,pad=22,bw=(W-20)/h.length,mx=Math.max(...h);
+  let out=`<svg viewBox="0 0 ${W} ${H+24}" width="100%" role="img" aria-label="Distribution of equity NPV">`;
+  h.forEach((c,i)=>{
+    const mid=lo+(i+0.5)/h.length*(hi-lo),bh=(c/mx)*(H-pad);
+    out+=`<rect x="${10+i*bw+1}" y="${H-bh}" width="${bw-2}" height="${bh}" rx="2" fill="${mid>=0?'var(--pos)':'var(--neg)'}" opacity=".85"/>`;
+  });
+  out+=`<line x1="10" x2="${W-10}" y1="${H}" y2="${H}" stroke="var(--line)"/>`;
+  if(lo<0&&hi>0){
+    const zx=10+(0-lo)/(hi-lo)*(W-20);
+    out+=`<line x1="${zx}" x2="${zx}" y1="4" y2="${H}" stroke="var(--gold)" stroke-width="2" stroke-dasharray="4 3"/><text x="${zx}" y="${H+14}" text-anchor="middle">0</text>`;
+  }
+  out+=`<text x="10" y="${H+14}">${fmt(lo)}</text><text x="${W-10}" y="${H+14}" text-anchor="end">${fmt(hi)}</text></svg>`;
+  return out;
+}
+
+/* ===================== UI BUILD ===================== */
+function buildFields(){
+  document.getElementById('fields').innerHTML=FIELDS.map(f=>{
+    const k=f[0],v=f[3]?cv(P[k]):P[k];
+    const lab=f[3]?`${f[1]} (${CUR})`:f[1];
+    const val=blank.has(k)?'':+(+v).toFixed(4);
+    return `<div class="fld"><label>${lab}<input type="number" step="any" placeholder="0" data-k="${k}" data-c="${f[3]?1:0}" value="${val}"></label><button type="button" class="x" data-x="${k}" title="Clear this value" aria-label="Clear ${esc(f[1])}">✕</button></div>`;
+  }).join('');
+}
+document.getElementById('fields').addEventListener('input',e=>{
+  const k=e.target.dataset.k;if(!k)return;
+  const raw=e.target.value;
+  if(raw===''){P[k]=0;blank.add(k);}
+  else{
+    let v=parseFloat(raw);v=isNaN(v)?0:v;blank.delete(k);
+    P[k]=e.target.dataset.c==='1'&&CUR==='USD'?v*FX:v;
+  }
+  edited();update();
+});
+document.getElementById('fields').addEventListener('click',e=>{
+  const b=e.target.closest('.x');if(!b)return;
+  const k=b.dataset.x;P[k]=0;blank.add(k);
+  b.parentElement.querySelector('input').value='';
+  edited();update();
+});
+function buildMCFields(){
+  document.getElementById('mcFields').innerHTML=MCF.map(f=>`<label>${f[1]}<input type="number" step="any" placeholder="0" data-m="${f[0]}" value="${MCP[f[0]]===0&&f[3]?'':MCP[f[0]]}"></label>`).join('');
+}
+document.getElementById('mcFields').addEventListener('input',e=>{
+  const k=e.target.dataset.m;if(!k)return;
+  const v=parseFloat(e.target.value);MCP[k]=isNaN(v)?0:v;edited();stale();renderMC();
+});
+function buildRep(){
+  document.getElementById('repFields').innerHTML=REPF.map(f=>`<label>${f[1]}<input type="text" data-r="${f[0]}" value="${esc(REP[f[0]])}"></label>`).join('');
+}
+document.getElementById('repFields').addEventListener('input',e=>{
+  const k=e.target.dataset.r;if(k)REP[k]=e.target.value;
+});
+function buildScen(){
+  const t=document.getElementById('scenTable');
+  t.innerHTML='<tr><th>Scenario</th><th>Price ×</th><th>Yield ×</th><th>Feed ×</th><th>Capex ×</th><th>Base</th><th></th></tr>'+
+  SCEN.map((s,i)=>`<tr><td><input type="text" data-i="${i}" data-s="name" value="${esc(s.name)}"></td>`+
+    ['price','yield','feed','capex'].map(k=>`<td><input type="number" step="0.01" data-i="${i}" data-s="${k}" value="${s[k]}"></td>`).join('')+
+    `<td><input type="radio" name="baseR" data-b="${i}" ${i===baseIdx?'checked':''} aria-label="Use ${esc(s.name)} as base"></td>`+
+    `<td><button type="button" class="x" style="position:static" data-d="${i}" title="Remove scenario" aria-label="Remove ${esc(s.name)}" ${SCEN.length<2?'disabled style="opacity:.3"':''}>✕</button></td></tr>`).join('');
+}
+const scenT=document.getElementById('scenTable');
+scenT.addEventListener('input',e=>{
+  const i=e.target.dataset.i,k=e.target.dataset.s;if(i==null)return;
+  if(k==='name')SCEN[i].name=e.target.value;
+  else{const v=parseFloat(e.target.value);SCEN[i][k]=isNaN(v)?1:v;}
+  edited();stale();update();
+});
+scenT.addEventListener('change',e=>{
+  if(e.target.dataset.b!=null){baseIdx=+e.target.dataset.b;edited();stale();update();}
+});
+scenT.addEventListener('click',e=>{
+  const b=e.target.closest('[data-d]');if(!b||SCEN.length<2)return;
+  const i=+b.dataset.d;SCEN.splice(i,1);
+  if(i<baseIdx)baseIdx--;else if(i===baseIdx)baseIdx=0;
+  baseIdx=clamp(baseIdx,0,SCEN.length-1);selected=clamp(selected>i?selected-1:selected,0,SCEN.length-1);
+  edited();stale();buildScen();update();
+});
+document.getElementById('addScen').onclick=()=>{
+  if(SCEN.length>=8)return;
+  SCEN.push({name:'New scenario '+(SCEN.length+1),price:1,yield:1,feed:1,capex:1});
+  edited();stale();buildScen();update();
+};
+function buildMetrics(){
+  document.getElementById('metrics').innerHTML=METRICS.map(m=>`<button class="pill soft ${m[0]===metric?'on':''}" data-m="${m[0]}">${m[1]}</button>`).join('');
+}
+document.getElementById('metrics').addEventListener('click',e=>{
+  const m=e.target.dataset.m;if(m){metric=m;buildMetrics();update();}
+});
+function stale(){if(MC)MC.stale=true;}
+function edited(){if(isSample){isSample=false;}updateBanner();}
+function updateBanner(){
+  const b=document.getElementById('banner');
+  if(isSample){b.className='banner';b.innerHTML='<b>Sample data loaded.</b> All figures are illustrative placeholders. Edit any value, clear one with its ✕, or clear everything to start with your own farm.';}
+  else{b.className='banner custom';b.innerHTML='<b>Custom data in use.</b> You have edited or cleared the sample data. "Restore sample data" brings the original placeholders back.';}
+}
+function setStatus(t){const s=document.getElementById('dmStatus');s.textContent=t;setTimeout(()=>{if(s.textContent===t)s.textContent='';},5000);}
+
+/* currency */
+function syncCurUI(){
+  document.getElementById('curSAR').classList.toggle('on',CUR==='SAR');
+  document.getElementById('curUSD').classList.toggle('on',CUR==='USD');
+  document.getElementById('fx').value=FX;
+}
+function setCur(c){CUR=c;syncCurUI();buildFields();update();}
+document.getElementById('curSAR').onclick=()=>setCur('SAR');
+document.getElementById('curUSD').onclick=()=>setCur('USD');
+document.getElementById('fx').addEventListener('input',e=>{
+  const v=parseFloat(e.target.value);
+  if(v>0){FX=v;if(CUR==='USD')buildFields();update();}
+});
+
+/* data manager */
+function rebuildAll(){
+  syncCurUI();buildFields();buildScen();buildMetrics();buildMCFields();buildRep();updateBanner();update();
+  document.getElementById('mcStatus').textContent='';
+}
+function twoStep(id,label,fn){
+  const btn=document.getElementById(id);let armed=false,t;
+  btn.onclick=()=>{
+    if(!armed){armed=true;btn.textContent='Click again to confirm';t=setTimeout(()=>{armed=false;btn.textContent=label;},4000);}
+    else{clearTimeout(t);armed=false;btn.textContent=label;fn();}
+  };
+}
+twoStep('btnClear','Clear all sample data',()=>{clearAll();rebuildAll();setStatus('All sample data cleared. Enter your own figures.');});
+twoStep('btnRestore','Restore sample data',()=>{loadSample();Object.assign(REP,SAMPLE_REP);rebuildAll();setStatus('Sample data restored.');});
+document.getElementById('btnExport').onclick=()=>{
+  const state={app:'creed-to-commerce-aquaponics-equity',version:3,CUR,FX,P,MCP,SCEN,baseIdx,REP};
+  const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='BMPA-aquaponics-equity-data.json';
+  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+  setStatus('Data exported.');
+};
+document.getElementById('btnImport').onclick=()=>document.getElementById('fileIn').click();
+document.getElementById('fileIn').onchange=e=>{
+  const f=e.target.files[0];if(!f)return;
+  const rd=new FileReader();
+  rd.onload=()=>{
+    try{
+      const s=JSON.parse(rd.result);
+      if(s.app!=='creed-to-commerce-aquaponics-equity')throw new Error('wrong file');
+      FIELDS.forEach(fl=>{const v=Number(s.P&&s.P[fl[0]]);P[fl[0]]=isFinite(v)?v:0;});
+      blank.clear();
+      MCF.forEach(fl=>{const v=Number(s.MCP&&s.MCP[fl[0]]);MCP[fl[0]]=isFinite(v)?v:fl[2];});
+      if(Array.isArray(s.SCEN)&&s.SCEN.length){
+        SCEN.length=0;
+        s.SCEN.slice(0,8).forEach(x=>{const n=k=>isFinite(Number(x[k]))?Number(x[k]):1;SCEN.push({name:String(x.name||'Scenario'),price:n('price'),yield:n('yield'),feed:n('feed'),capex:n('capex')});});
+      }
+      baseIdx=clamp(Math.round(Number(s.baseIdx))||0,0,SCEN.length-1);selected=baseIdx;
+      if(s.REP)REPF.forEach(r=>{if(typeof s.REP[r[0]]==='string')REP[r[0]]=s.REP[r[0]];});
+      CUR=s.CUR==='USD'?'USD':'SAR';FX=Number(s.FX)>0?Number(s.FX):3.75;
+      MC=null;isSample=false;rebuildAll();setStatus('Data imported.');
+    }catch(err){setStatus('Could not import: this is not a valid data file from this app.');}
+  };
+  rd.readAsText(f);e.target.value='';
+};
+
+/* ===================== RENDER ===================== */
+function val(r,m){const v=m==='irr'?(r.irr==null?-1:r.irr):r[m];return isFinite(v)?v:0;}
+function show(r,m){
+  if(m==='irr')return pct(r.irr);
+  if(m==='moic')return x2(r.moic);
+  if(m==='roe')return pct(r.roe);
+  return money(r[m]);
+}
+function compute(){return SCEN.map((s,i)=>({i,s,r:run(P,s)}));}
+function sortedBy(results,m){return results.slice().sort((a,b)=>val(a.r,m)-val(b.r,m));}
+
+function update(){
+  selected=clamp(selected,0,SCEN.length-1);
+  const results=compute();
+  const sorted=sortedBy(results,metric);
+  const vals=sorted.map(o=>val(o.r,metric));
+  const mn=Math.min(0,...vals),mx=Math.max(0,...vals),span=(mx-mn)||1;
+  const zero=(0-mn)/span*100;
+  const el=document.getElementById('ranking');
+  el.innerHTML=sorted.map((o,k)=>{
+    const v=val(o.r,metric);
+    const good=metric==='moic'?o.r.moic>=1:(metric==='exitEq'?true:v>=0);
+    const left=Math.min(zero,(v-mn)/span*100),w=Math.abs((v-mn)/span*100-zero);
+    return `<div class="rank ${o.i===selected?'sel':''}" data-i="${o.i}">
+      <div class="badge">${k+1}</div>
+      <div class="rbody">
+        <div class="rtop"><span>${esc(o.s.name)}${o.i===baseIdx?' <small style="color:var(--gold)">(base)</small>':''}</span><span class="${good?'pos':'neg'}">${show(o.r,metric)}</span></div>
+        <div class="bar"><i style="left:${left}%;width:${Math.max(w,1)}%;background:${good?'var(--pos)':'var(--neg)'}"></i></div>
+        <div class="chips">
+          <span>Equity in: ${fmt(o.r.equity)}</span>
+          <span>NPV: ${fmt(o.r.npv)}</span>
+          <span>IRR: ${pct(o.r.irr)}</span>
+          <span>Multiple: ${x2(o.r.moic)}</span>
+          <span>Payback: ${yrs(o.r.payback)}</span>
+          <span>Min DSCR: ${dscrF(o.r.minDscr)}</span>
+        </div>
+      </div></div>`;
+  }).join('');
+  el.onclick=e=>{const c=e.target.closest('.rank');if(c){selected=+c.dataset.i;update();}};
+
+  const coach=document.getElementById('coach');
+  const base=results[baseIdx];
+  if(base.r.total<=0){
+    coach.innerHTML='<b>Coach\'s read:</b> Enter your farm\'s capex, output, prices and costs above to see equity outcomes.';
+  }else{
+    const low=sorted[0],high=sorted[sorted.length-1];
+    const lowMsg=low.r.npv<0?`In the <b>${esc(low.s.name)}</b> scenario, equity value falls ${money(-low.r.npv)} short of your ${P.ke}% hurdle.`:`Even the <b>${esc(low.s.name)}</b> scenario clears your ${P.ke}% hurdle, a strong sign.`;
+    const dscrMsg=(low.r.minDscr!=null&&low.r.minDscr<1.2)?` Its minimum DSCR is ${low.r.minDscr.toFixed(2)}x, so negotiate grace periods or reduce debt.`:'';
+    let beMsg='';
+    if(P.price>0){const be=breakevenPrice(P,base.s);beMsg=` Break-even tilapia price (NPV = 0) in the base scenario is about <b>${CUR} ${cv(be).toFixed(2)}/kg</b> against your ${cv(P.price).toFixed(2)} assumption, a ${((1-be/P.price)*100).toFixed(1)}% price cushion.`;}
+    coach.innerHTML=`<b>Coach's read:</b> ${lowMsg}${dscrMsg} The <b>${esc(high.s.name)}</b> scenario shows the ceiling at NPV ${money(high.r.npv)}.${beMsg} Lock in offtake contracts and feed pricing before committing equity.`;
+  }
+
+  const sel=results[selected];
+  document.getElementById('selName').textContent=sel.s.name;
+  document.getElementById('cfTable').innerHTML=cfTableHTML(sel);
+  renderMC();
+}
+function cfTableHTML(sel){
+  return `<tr><th>Year</th><th>Revenue</th><th>EBITDA</th><th>Net income</th><th>Principal</th><th>Equity cash flow</th><th>Debt bal.</th></tr>`+
+    `<tr><td>0</td><td>–</td><td>–</td><td>–</td><td>–</td><td class="neg">${fmt(-sel.r.equity)}</td><td>${fmt(sel.r.debt)}</td></tr>`+
+    sel.r.rows.map(r=>`<tr><td>${r.y}</td><td>${fmt(r.rev)}</td><td class="${r.ebitda<0?'neg':''}">${fmt(r.ebitda)}</td><td class="${r.ni<0?'neg':''}">${fmt(r.ni)}</td><td>${fmt(r.principal)}</td><td class="${r.fcfe<0?'neg':'pos'}">${fmt(r.fcfe)}${r.exit?' *':''}</td><td>${fmt(r.bal)}</td></tr>`).join('')+
+    `<tr><td colspan="7" style="text-align:left;white-space:normal;color:var(--muted)">All amounts in ${CUR}. * Final year includes exit equity value (EBITDA × multiple − remaining debt + working capital recovered).</td></tr>`;
+}
+
+function mcRankHTML(arr,kind){
+  const vals=arr.map(x=>x.v);
+  const mn=Math.min(0,...vals),mx=Math.max(0,...vals),span=(mx-mn)||1,zero=(0-mn)/span*100;
+  return arr.map(x=>{
+    const good=kind==='moic'?x.v>=1:x.v>=0;
+    const label=money(x.v);
+    const left=Math.min(zero,(x.v-mn)/span*100),w=Math.abs((x.v-mn)/span*100-zero);
+    const nm=Math.round(x.q*100);
+    return `<div class="rank static"><div class="badge">P${nm}</div><div class="rbody">
+      <div class="rtop"><span>${nm===50?'Median':nm<50?'Worse than '+(100-nm)+'% of trials':'Better than '+nm+'% of trials'}</span><span class="${good?'pos':'neg'}">${label}</span></div>
+      <div class="bar"><i style="left:${left}%;width:${Math.max(w,1)}%;background:${good?'var(--pos)':'var(--neg)'}"></i></div></div></div>`;
+  }).join('');
+}
+function mcSummaryText(){
+  const q=MC.npvQ,p5=q[0].v,p50=q[3].v,p95=q[6].v;
+  const verdict=MC.probPos>=0.7?'a favourable risk profile':MC.probPos>=0.5?'a coin-flip-plus profile that needs de-risking':'a weak profile at current assumptions';
+  return `<b>Coach's read:</b> Across ${MC.n.toLocaleString()} trials, equity NPV is positive in <b>${pct(MC.probPos)}</b> of cases: ${verdict}. The median outcome is ${money(p50)}; the worst 5% of trials fall to ${money(p5)} or below (average of that tail: ${money(MC.cvar5)}), while the best 5% reach ${money(p95)}. Investors lose capital (multiple below 1.0x) in ${pct(MC.probLoss)} of trials${MC.probDscr!=null?` and the farm breaches debt service coverage of 1.0x in ${pct(MC.probDscr)}`:''}. Use these figures to size contingency reserves and to negotiate offtake and feed contracts.`;
+}
+function renderMC(){
+  const out=document.getElementById('mcOut');
+  if(!MC){out.innerHTML='<p class="note">Press "Run simulation" to draw random price, yield, feed, capex and mortality outcomes around your base scenario.</p>';return;}
+  out.innerHTML=`
+    ${MC.stale?'<p class="warn">Inputs changed since this run. Press "Run simulation" to refresh.</p>':''}
+    <div class="stats">
+      <div class="stat"><b class="${MC.probPos>=0.5?'pos':'neg'}">${pct(MC.probPos)}</b><small>Probability NPV &gt; 0</small></div>
+      <div class="stat"><b>${money(MC.mean)}</b><small>Mean NPV</small></div>
+      <div class="stat"><b>${money(MC.sd)}</b><small>NPV std. deviation</small></div>
+      <div class="stat"><b class="neg">${pct(MC.probLoss)}</b><small>Prob. capital loss (&lt;1.0x)</small></div>
+      <div class="stat"><b>${MC.probDscr==null?'n/a':pct(MC.probDscr)}</b><small>Prob. DSCR &lt; 1.0x</small></div>
+      <div class="stat"><b class="neg">${money(MC.cvar5)}</b><small>Avg NPV, worst 5%</small></div>
+    </div>
+    <h2 style="margin-top:6px">Distribution of equity NPV (${CUR})</h2>
+    ${histSVG()}
+    <h2 style="margin-top:14px">NPV percentiles, ranked low → high</h2>
+    ${mcRankHTML(MC.npvQ,'npv')}
+    <div class="coach">${mcSummaryText()}</div>`;
+}
+document.getElementById('mcRun').onclick=()=>{
+  const st=document.getElementById('mcStatus');
+  st.textContent='Running…';
+  setTimeout(()=>{runMC();st.textContent=`Done: ${MC.n.toLocaleString()} trials.`;renderMC();},30);
+};
+
+/* ===================== INVESTOR PDF ===================== */
+function tbl(head,rows){
+  return `<table><tr>${head.map(h=>`<th>${h}</th>`).join('')}</tr>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</table>`;
+}
+function buildReport(){
+  if(!MC||MC.stale)runMC();
+  const results=compute(),sorted=sortedBy(results,'npv'),base=results[baseIdx],r=base.r;
+  const be=P.price>0?breakevenPrice(P,base.s):null;
+  const today=new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  const assum=[
+    ['Total capex (base)',money(P.capex)],['Working capital',money(P.wc)],
+    ['Debt share / rate / term',`${P.debtPct}% / ${P.rate}% / ${P.term} yrs`],
+    ['Mature gross output',`${Math.round(P.kg).toLocaleString()} kg/yr`],
+    ['Mortality / grading loss',`${P.mort}%`],['Ramp-up (Y1 / Y2)',`${P.r1}% / ${P.r2}%`],
+    ['Tilapia price',`${CUR} ${cv(P.price).toFixed(2)}/kg`],['Produce sales (mature)',`${money(P.produce)}/yr`],
+    ['Feed + fingerlings + energy',`${CUR} ${cv(P.feed+P.fing+P.energy).toFixed(2)}/kg`],
+    ['Labor + other fixed',`${money(P.labor+P.other)}/yr`],
+    ['Cost inflation / price growth',`${P.infl}% / ${P.pg}%`],['Effective tax/zakat',`${P.tax}%`],
+    ['Cost of equity',`${P.ke}%`],['Horizon / exit multiple',`${Math.max(1,Math.round(P.N))} yrs / ${P.mult}x EBITDA`]
+  ];
+  const half=Math.ceil(assum.length/2);
+  document.getElementById('report').innerHTML=`
+    <div class="cover">
+      <div class="basmala" lang="ar" dir="rtl">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="mark">Creed-to-Commerce<sup>™</sup></div>
+      <div class="org">The Balanced Middle Path Academy, LLC</div>
+    </div>
+    <h1>${esc(REP.project||'Aquaponics Tilapia Farm')}: Investor Equity Summary</h1>
+    <div class="meta">
+      <div><small>Prepared for</small><br><b>${esc(REP.forWho||'Prospective investors')}</b></div>
+      <div><small>Prepared by</small><br><b>${esc(REP.byWho||'')}</b></div>
+      <div><small>Date · Currency</small><br><b>${today} · ${CUR}${CUR==='USD'?` (SAR ${FX} = USD 1)`:''}</b></div>
+    </div>
+    ${isSample?'<div class="sample"><b>Illustrative sample data.</b> The figures in this report use placeholder assumptions and must be replaced with verified project data before being relied upon.</div>':''}
+    <div class="block">
+      <div class="kv">
+        <div><small>Total funding</small><b>${money(r.total)}</b></div>
+        <div><small>Debt</small><b>${money(r.debt)}</b></div>
+        <div><small>Equity required</small><b>${money(r.equity)}</b></div>
+        <div><small>Break-even price (base)</small><b>${be==null?'n/a':CUR+' '+cv(be).toFixed(2)+'/kg'}</b></div>
+        <div><small>Base NPV of equity (${esc(base.s.name)})</small><b>${money(r.npv)}</b></div>
+        <div><small>Base equity IRR</small><b>${pct(r.irr)}</b></div>
+        <div><small>Equity multiple</small><b>${x2(r.moic)}</b></div>
+        <div><small>Payback</small><b>${yrs(r.payback)}</b></div>
+      </div>
+    </div>
+    <h2>1. Key assumptions</h2>
+    <div class="block" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      ${tbl(['Item','Value'],assum.slice(0,half))}${tbl(['Item','Value'],assum.slice(half))}
+    </div>
+    <h2>2. Scenario outcomes, ranked low to high by equity NPV</h2>
+    <div class="block">${tbl(['Rank','Scenario','NPV','IRR','Multiple','Payback','Min DSCR','Exit equity'],
+      sorted.map((o,k)=>[k+1,esc(o.s.name),money(o.r.npv),pct(o.r.irr),x2(o.r.moic),yrs(o.r.payback),dscrF(o.r.minDscr),money(o.r.exitEq)]))}</div>
+    <h2>3. Monte Carlo risk analysis (${MC.n.toLocaleString()} trials, seed ${Math.round(MCP.seed)})</h2>
+    <div class="kv">
+      <div><small>Probability NPV &gt; 0</small><b>${pct(MC.probPos)}</b></div>
+      <div><small>Probability of capital loss</small><b>${pct(MC.probLoss)}</b></div>
+      <div><small>Mean NPV</small><b>${money(MC.mean)}</b></div>
+      <div><small>Avg NPV, worst 5%</small><b>${money(MC.cvar5)}</b></div>
+    </div>
+    <div class="block">${histSVG()}</div>
+    <div class="block">${tbl(['Percentile (low → high)','Equity NPV','Equity IRR','Equity multiple'],
+      MC.npvQ.map((x,i)=>['P'+Math.round(x.q*100),money(x.v),MC.irrQ[i].v<=-0.949?'n/a (loss)':pct(MC.irrQ[i].v),x2(MC.moicQ[i].v)]))}</div>
+    <p>${mcSummaryText()}</p>
+    <h2 class="pb">4. Base-scenario equity cash flow</h2>
+    <div class="block"><table>${cfTableHTML(base)}</table></div>
+    <p><b>Volatility assumptions:</b> price σ ${MCP.sdPrice}%, yield σ ${MCP.sdYield}%, feed cost σ ${MCP.sdFeed}%, capex overrun σ ${MCP.sdCapex}% (one-sided), mortality σ ${MCP.sdMort} pts. Draws are normal, truncated to plausible bounds, and centred on the base scenario.</p>
+    <div class="disc">This document is a planning model built on the assumptions shown and is not an offer of securities, financial advice, or a forecast. Tax and zakat treatment varies by ownership structure; obtain advice from a qualified Saudi adviser. Verify all figures against supplier quotations, lender term sheets, and market price evidence before relying on them.<br><b>Creed-to-Commerce™</b> · The Balanced Middle Path Academy, LLC</div>`;
+}
+document.getElementById('pdfBtn').onclick=()=>{
+  buildReport();renderMC();
+  setTimeout(()=>window.print(),80);
+};
+
+/* ===================== INIT ===================== */
+document.getElementById('yr').textContent=new Date().getFullYear();
+rebuildAll();
+</script>
+</body>
+</html>
